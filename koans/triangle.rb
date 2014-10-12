@@ -14,7 +14,14 @@
 #   about_triangle_project_2.rb
 #
 def triangle(a, b, c)
-  # WRITE THIS CODE
+  triangle_types = {
+      3 => :scalene,
+      2 => :isosceles,
+      1 => :equilateral
+  }
+  uniq_count = [a, b, c].uniq.size
+
+  triangle_types[uniq_count]
 end
 
 # Error class used in part 2.  No need to change this code.
